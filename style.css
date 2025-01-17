@@ -1,0 +1,249 @@
+/*
+  Biographies Style Sheet
+  Author: Narendra Nath Chalasani
+  Date: 12/30/2022
+*/
+
+/* https://coolors.co/palette/3d348b-7678ed-f7b801-f18701-f35b04 */
+
+body {
+  background-color: #e0e1dd;
+  text-align: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+title {
+  color:#0d1b2a;
+}
+
+.hi-button {
+  background-color: olive;
+  color: black;
+}
+
+#h6info{
+  color:#1b263b;
+}
+
+.certs img {
+  width:250px;
+  height:250px;
+}
+
+.certs_container {
+  display:grid;
+  align-content:evenly;
+  
+}
+
+.menu {
+  background-color: #e0e1dd;
+  width: 100%;
+  height: 32px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin-top: 0px;
+  z-index: 100;
+}
+
+.link {
+  display:inline;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Manrope';
+  letter-spacing: 0.5px;
+  
+
+}
+
+a:visited {
+  text-decoration: none;
+  color:#1b263b;
+  transition: color 0.1s ease;
+}
+
+a:link {
+  text-decoration: none;
+  color:#1b263b;
+  transition: color 0.1s ease;
+}
+
+.link a:hover {
+  color:#415a77 !important;
+}
+
+.name {
+  animation: typewriter 5s steps(23, end), blink 0.5s step-end 5s;
+  font-size: 60px;
+  text-shadow: 5px 5px 5px #778da9;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 23ch;
+  line-height: 1;
+  border-right: 2px solid black; /* blinking cursor */
+  
+}
+
+.name::after {
+  content: "";
+  display:inline-block;
+  border-right: 2px solid black;
+  animation: none;
+  
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  } 
+
+  to {
+    width: 23ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }  
+}
+.name{
+  animation:typewriter 5s steps(22, end), blink 0.5s step-end 5s, fadeout 1s linear 2s forwards;
+}
+
+@keyframes fadeout {
+  to {
+    border-color: transparent;
+  }
+}
+
+.mypic {
+  padding-top: 50px;
+  opacity: 0.85;
+}
+
+#info {
+  color:#1b263b;
+  letter-spacing: 1.5;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 18px;
+  text-align: justify;
+  word-spacing: 2px;
+}
+
+li {
+  text-align:justify ;
+  padding-left: 85px;
+}
+
+.contacts iframe {
+  width: 90%;
+  border-radius: 20px;
+
+}
+
+.mail {
+  font-size: 25px;
+  color: #0077B5;
+}
+
+.ld {
+  font-size: 25px;
+  color: #0077B5;
+}
+
+.gh {
+  font-size: 25px;
+  color: #171515;
+}
+
+.fb {
+  font-size: 25px;
+  color: #316FF6;
+}
+
+.ig {
+  font-size: 25px;
+  background: linear-gradient(90deg, #4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.tt img {
+  width: 12px;
+  height: 12px;
+}
+
+.headingpage {
+  padding-top: 20px;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  font-size: 30px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e0e1dd;
+  padding: 10px;
+}
+
+.cert_head {
+  font-size: 22px;
+  padding: 6px 20px;
+  border-radius: 30px;
+  margin-bottom: 15px;
+  width: 50%;
+  background-color: rgb(201, 199, 199);
+}
+
+.cert_head i {
+  float: right;
+}
+
+.cert_head span{
+  color: darkblue;
+}
+
+.cert_head img{
+  width: 40px;
+  height: 40px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 105;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+} 
+
+.dropdown.show .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
